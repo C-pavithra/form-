@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        form {
+            background-color: black;
+            color: white;
+            border: 2px solid blue;
+            text-align: center;
+        }
+
+        div.fixed {
+            position: fixed;
+            bottom: 0%;
+            right: 0%;
+            width: 200px;
+            border: 3px solid grey;
+        }
+
+        ::placeholder {
+            background-color: turquoise;
+        }
+
+        input[type="password"] {
+            color: cornflowerblue;
+
+        }
+
+        .margin-20px {
+            margin: 20px;
+        }
+
+        h1.sticky {
+            position: sticky;
+            top: 0;
+            padding: 20px;
+            text-align: center;
+            background: grey;
+            bottom: 130%;
+            font-weight: bold;
+            color: white;
+        }
+
+        .select::selection {
+            background-color: yellow;
+            margin: 20px;
+        }
+
+        a:link {
+            color: yellow;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: hotpink;
+        }
+
+        a:focus {
+            color: red;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        a.fixed {
+            position: fixed;
+            bottom: 0%;
+            left: 40%;
+            width: 200px;
+            border: 3px solid grey;
+        }
+
+        .font-size-em {
+            font-size: 2em;
+            color: red;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+
+        h3 {
+            margin: 1em;
+        }
+
+        .h2 h3 {
+            margin: inherit;
+        }
+
+        section {
+            border-style: groove;
+        }
+    </style>
+
+</head>
+<form>
+    <title>practice document</title>
+    <h1 class="sticky">course registeration form</h1>  
+    <h3 class="font-size-em">must to fill</h1>
+        <h2 class="h2">its easy and quick</h1>
+            <label for="firstname">FIRST NAME:</label>
+            <input class="margin-20px" id="firstname" type="text" placeholder="firstname">
+            <label for="surname">SUR NAME:</label>
+            <input id="surname" type="text" placeholder="surname">
+            <label for="lastname">LAST NAME:</label>
+            <input id="lastname" type="text" placeholder="lastname"><br />
+            <label for="password">PASSWORD:</label>
+            <input class="margin-20px" id="password" type="password" placeholder="password">
+            <label for="password"> CONFIRM PASSWORD:</label>
+            <input id="password" type="password" placeholder="password"><br />
+            <label for="mobile number">MOBILE NUMBER:</label>
+            <input class="margin-20px" id="mobile number" type="number" placeholder="mobile number " />
+            <label for="mobile number1">OPTIONAL MOBILE NUMBER:</label>
+            <input id="mobile number1" type="number" placeholder="mobile number " /><br />
+            <label for="email address">EMAIL ADDRESS:</label>
+            <input class="margin-20px" id="email address" type="email" placeholder="emailaddress" />
+            <label for="email address1">OPTIONAL EMAIL ADDRESS:</label>
+            <input id="email address1" type="email" placeholder="emailaddress" /><br />
+            <label for="date of birth">DATE OF BIRTH:</label><br />
+            <input class="margin-20px" id="date of birth" type="date" /><br />
+            GENDER:<br />
+            <input type="radio" name="gender" value="male" /> Male
+            <input type="radio" name="gender" value="female" /> Female
+            <input type="radio" name="gender" value="female" /> Custom <br /><br />
+            TIME SLOT:
+            <input class="margin-20px" id="time slot" type="time"><br />
+            PREFERRABLE LANGUAGE:
+            <select>
+                <option value="english">ENGLISH</option>
+                <option value="hindi">HINDI</option>
+                <option value="malyalam">MALAYALAM</option>
+                <option value="kannada">KANNADA</option>
+                <option value="telugu">TELUGU</option>
+            </select><br /><br />
+            CHOOSE COURSE:<br />
+            <input type="checkbox" value="html" /> HTML
+            <input type="checkbox" value="css" /> CSS
+            <input type="checkbox" value="javascript" /> JAVASCRIPT
+            <input type="checkbox" value="bootstrap" /> BOOTSTRAP
+            <input type="checkbox" value="angular js" /> ANGULAR JS
+            <input type="checkbox" value="react" /> REACT
+            <input type="checkbox" value="python" /> PYTHON
+            <input type="checkbox" value="java" /> JAVA
+            <input type="checkbox" value="mongo db" /> MONGO DB
+            <input type="checkbox" value="sql" /> SQL<br /><br />
+            <label for="profile pic">profile pic</label>
+            <input id="profile pic" type="file" required file size should be 25mb /><br />
+</form>
+<section>
+    <div class="before-after">
+        Terms And Conditions:<br />
+        <p1>1.A Terms and Conditions agreement acts as legal contracts between you (the company) who has the website or
+            mobile app, and the user who accesses your website/app.</p1><br />
+        <p2>2.Having a Terms and Conditions agreement is completely optional. No laws require you to have one. Not even
+            the super-strict and wide-reaching General Data Protection Regulation (GDPR).</p2><br />
+        <select>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+        </select><br />
+        <input type="checkbox" value="terms" /> By clicking sign up,you agree to Terms,Data Policy and cookie policy.
+        <p class="select">You may receive SMS notifications from us and can opt out at any time</p>
+        <input class="margin-20px" type="submit" />
+        <input class="margin-20px" type="reset" /> <br /><br />
+</section>
+<div class="fixed">
+    <a href="mailto:info@chettinad.no">mail us</a><br />
+</div>
+<a class=fixed href="https://www.besanttechnologies.com/" target=_top>TO KNOW MORE DATA CLICK HERE</a>
+
+
+
+
+
+
+
+</html>
+<!-- <input type="button" id="disableButton"  value="Disable Me">quit<br/>   -->
+<!-- <input type="button" id="toggleButton" onclick="onClickOfButton()" value="Toggle button">stay<br/> -->
